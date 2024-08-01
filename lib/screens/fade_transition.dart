@@ -35,7 +35,7 @@ class _InitFadeTransitionState extends State<InitFadeTransition>
       if (status == AnimationStatus.dismissed) {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => HomePage()),
+          MaterialPageRoute(builder: (context) => const HomePage()),
         );
       }
     });
@@ -55,7 +55,7 @@ class _InitFadeTransitionState extends State<InitFadeTransition>
         opacity: _animation,
         child: Padding(
           padding: const EdgeInsets.all(8),
-          child: Image.asset('assets/choso.png'),
+          child: Image.asset('assets/bebe.png'),
         ),
       ),
     );
