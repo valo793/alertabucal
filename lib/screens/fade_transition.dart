@@ -50,7 +50,7 @@ class _InitFadeTransitionState extends State<InitFadeTransition>
   @override
   Widget build(BuildContext context) {
     return ColoredBox(
-      color: Colors.white,
+      color: const Color.fromARGB(255, 236, 237, 242),
       child: FadeTransition(
         opacity: _animation,
         child: Padding(

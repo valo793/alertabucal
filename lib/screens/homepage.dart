@@ -7,10 +7,20 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Page'),
+        title: Image.asset(
+          'assets/bebe_logo.png',
+          width: 50,
+          height: 50,
+        ),
       ),
-      body: const Center(
-        child: Text('Tela Principal'),
+      body: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints.expand(),
+          child: const Text(
+            'Bem vindo!',
+            textAlign: TextAlign.center,
+          ),
+        ),
       ),
     );
   }
